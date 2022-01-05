@@ -1,5 +1,5 @@
 {
-	"name": "dtmonterrey/components",
+	"name": "dtmonterrey/yii2-components",
 	"description": "Components for yii 2",
 	"require": {
 		"dtmonterrey/module-user-management" : "^2.0",
