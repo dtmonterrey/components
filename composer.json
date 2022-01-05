@@ -1,8 +1,9 @@
 {
 	"name": "dtmonterrey/yii2-components",
 	"description": "Components for yii 2",
+	"minimum-stability" : "stable",
 	"require": {
-		"dtmonterrey/module-user-management" : "^2.0",
+		"dtmonterrey/module-user-management" : "*",
 		"webvimark/image": "^1.0.0",
 		"webvimark/helpers": "^1.0.0"
 	},
