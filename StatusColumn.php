@@ -1,5 +1,5 @@
 <?php
-namespace webvimark\components;
+namespace dtmonterrey\components;
 
 
 use yii\base\InvalidConfigException;
@@ -116,6 +116,7 @@ class StatusColumn extends DataColumn
 				{
 					$style .= 'cursor:pointer;';
 
+					/** @var \yii\base\Object $matches */
 					preg_match('/=_\w+_/',$this->toggleUrl, $matches);
 
 					$idAttributePlaceholder = ltrim($matches[0], '=');

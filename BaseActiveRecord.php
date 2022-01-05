@@ -1,5 +1,5 @@
 <?php
-namespace webvimark\components;
+namespace dtmonterrey\components;
 
 use webvimark\helpers\LittleBigHelper;
 use webvimark\helpers\Singleton;
@@ -419,6 +419,7 @@ class BaseActiveRecord extends ActiveRecord
 			$languages = Yii::$app->params['mlConfig']['languages'];
 //			unset($languages[Yii::$app->params['mlConfig']['default_language']]);
 
+			/** @var \yii\base\Object $languageName */
 			foreach ($languages as $languageCode => $languageName)
 			{
 				foreach ($this->_i18n_attributes as $attribute)
@@ -734,6 +735,7 @@ class BaseActiveRecord extends ActiveRecord
 
 			$class = StringHelper::basename(get_called_class());
 
+			/** @var \yii\base\Object $value */
 			foreach ($values as $name => $value)
 			{
 				if ( isset( $attributes[$name] ) )
