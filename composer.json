@@ -1,11 +1,10 @@
 {
 	"name": "dtmonterrey/yii2-components",
 	"description": "Components for yii 2",
-	"minimum-stability" : "stable",
 	"require": {
-		"dtmonterrey/module-user-management" : "*",
 		"webvimark/image": "^1.0.0",
-		"webvimark/helpers": "^1.0.0"
+		"webvimark/helpers": "^1.0.0",
+		"yiisoft/yii2" : "^2.0"
 	},
 	"autoload": {
 		"psr-4": {
@@ -13,6 +12,10 @@
 		}
 	},
 	"repositories" : [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		},
 		{
 			"type": "git",
 			"url": "https://github.com/dtmonterrey/user-management",
